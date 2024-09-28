@@ -22,7 +22,7 @@ export default function Home({ content }: HomeProps) {
 }
 
 export const getStaticProps = async () => {
-  const BASE_URL = "http://localhost:1337/api/about";
+  const BASE_URL = "https://wise-surprise-4d062d1098.strapiapp.com/api/about";
 
   const response = await fetch(BASE_URL);
   const { data } = await response.json();
